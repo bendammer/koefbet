@@ -1,7 +1,8 @@
-const nameInput = document.getElementById('name');
-const betAmount = document.getElementById('bet-amount');
-const bet = document.getElementById('bet');
+const nameInput = document.getElementById('name').value;
+const betAmount = document.getElementById('bet-amount').value;
+const bet = document.getElementById('bet').value;
 const submitButton = document.querySelector('#submit-button');
+const thankYouNote = document.getElementById('thank-you');
 
 const user = {
   name: nameInput,
@@ -11,15 +12,13 @@ const user = {
 
 console.log(user);
 
-
-submitButton.addEventListener('click', (e, user) => {
+submitButton.addEventListener('click', (e) => {
 
   e.preventDefault();
-
-  console.log(user);
 
   nameInput.value = '';
   betAmount.value = '';
   bet.value = '';
 
+  thankYouNote.style = 'opacity: 1;';
 });

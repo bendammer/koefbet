@@ -1,8 +1,16 @@
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #bbbbbb;
   font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+  margin: 0.3em;
+}
+
+#thank-you {
+  opacity: 0;
 }
